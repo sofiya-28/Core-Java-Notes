@@ -258,7 +258,6 @@ double price = 12.5;
 Java provides **8 Primitive Data Types**.
 
 They are:
-
 1. byte
 2. short
 3. int
@@ -271,7 +270,6 @@ They are:
 ---
 
 # 1. byte
-
 The **byte** data type is used to store small integer values.
 
 ### Size
@@ -324,10 +322,7 @@ byte age = 20
 - File handling
 - Network programming
 
----
-
 # 2. short
-
 The **short** data type stores integer values larger than byte.
 
 ### Size
@@ -367,18 +362,13 @@ short salary
 ```
 
 ### Uses
-
 - Medium-sized numbers
 - Memory optimization
-
----
 
 # 3. int
 
 The **int** data type is the most commonly used integer type in Java.
-
 Whenever we store whole numbers,
-
 we generally use **int**.
 
 ### Size
@@ -469,8 +459,6 @@ Preferred
 long number = 9876543210L;
 ```
 
----
-
 ### Memory Diagram
 
 ```
@@ -482,12 +470,9 @@ long population
 ```
 
 ### Uses
-
 - Population
 - Bank Transactions
 - Large IDs
-
----
 
 # Integer Data Types Comparison
 
@@ -498,20 +483,16 @@ long population
 | int | 4 Bytes | -2,147,483,648 to 2,147,483,647 |
 | long | 8 Bytes | Very Large Integer |
 
----
 
 # Important Notes
-
 - byte uses the least memory.
 - int is the most commonly used integer data type.
 - long is used for very large values.
 - Use long only when int cannot store the value.
 
----
-
 # Common Beginner Mistakes
 
-❌ Forgetting **L** after long value.
+* Forgetting **L** after long value.
 
 Wrong
 
@@ -527,7 +508,7 @@ long number = 9876543210L;
 
 ---
 
-❌ Using byte for very large numbers.
+* Using byte for very large numbers.
 
 Wrong
 
@@ -541,32 +522,23 @@ Correct
 int age = 200;
 ```
 
----
-
 # Interview Questions
 
 ### Basic
-
 1. Which integer Data Type is used most frequently?
 2. What is the size of byte?
 3. What is the size of int?
 4. Why do we use long?
 5. What is the range of byte?
 
----
-
 ### Intermediate
-
 1. Differentiate byte and short.
 2. Differentiate int and long.
 3. Why do we write L after long values?
 4. Which integer Data Type is memory efficient?
 5. When should we use long instead of int?
 
----
-
 # Summary
-
 - byte → Small Integer
 - short → Medium Integer
 - int → Most Common Integer Type
@@ -574,10 +546,7 @@ int age = 200;
 
 Choose the smallest suitable Data Type to improve memory efficiency.
 
----
-
-## Next Part
-
+# (Part-3)
 In **Part 3**, we will study:
 
 - float
@@ -592,4 +561,363 @@ In **Part 3**, we will study:
 - Interview Questions
 - Chapter Summary
 
-# (Part-3)
+# 5. float
+
+The **float** data type is used to store decimal (floating-point) numbers.
+
+It provides less precision than `double` but consumes less memory.
+
+## Size
+
+```
+4 Bytes (32 Bits)
+```
+
+## Default Value
+
+```
+0.0f
+```
+
+## Example
+
+```java
+float price = 99.99f;
+
+System.out.println(price);
+```
+
+> **Note:** Always add **f** or **F** after a float value.
+
+### Memory Diagram
+
+```
+float price
+
++-----------+
+|  99.99f   |
++-----------+
+```
+
+### Uses
+
+- Temperature
+- Height
+- Weight
+- Percentage
+
+# 6. double
+
+The **double** data type is used to store decimal numbers with high precision.
+
+It is the default choice for decimal values in Java.
+
+## Size
+
+```
+8 Bytes (64 Bits)
+```
+
+## Default Value
+
+```
+0.0d
+```
+
+## Example
+
+```java
+double salary = 45678.75;
+
+System.out.println(salary);
+```
+
+### Memory Diagram
+
+```
+double salary
+
++---------------+
+| 45678.75      |
++---------------+
+```
+
+### Uses
+- Scientific Calculations
+- Financial Calculations
+- Mathematical Operations
+
+
+# Difference Between float and double
+
+| float | double |
+|-------|--------|
+| 4 Bytes | 8 Bytes |
+| Less Precision | More Precision |
+| Ends with f | No suffix required |
+| Less Memory | More Memory |
+
+# 7. char
+
+The **char** data type stores a **single Unicode character**.
+
+## Size
+
+```
+2 Bytes (16 Bits)
+```
+
+## Default Value
+
+```
+'\u0000'
+```
+
+## Example
+
+```java
+char grade = 'A';
+
+System.out.println(grade);
+```
+
+### Memory Diagram
+
+```
+char grade
+
++------+
+|  A   |
++------+
+```
+
+### Uses
+
+- Grade
+- Gender Code
+- Symbols
+- Single Characters
+
+# Difference Between char and String
+
+| char | String |
+|------|---------|
+| Stores one character | Stores multiple characters |
+| Uses single quotes | Uses double quotes |
+| Example: 'A' | Example: "A" |
+
+# 8. boolean
+
+The **boolean** data type stores only two values.
+
+- true
+- false
+
+It is mainly used in decision making.
+
+## Size
+
+Java does not define an exact memory size for boolean. It is JVM dependent.
+
+## Default Value
+
+```
+false
+```
+
+## Example
+
+```java
+boolean passed = true;
+
+System.out.println(passed);
+```
+
+### Memory Diagram
+
+```
+boolean passed
+
++---------+
+|  true   |
++---------+
+```
+
+### Uses
+- Login Status
+- Eligibility
+- Validation
+- Decision Making
+
+# Complete Primitive Data Types Table
+
+| Data Type | Size | Default Value |
+|-----------|------|---------------|
+| byte | 1 Byte | 0 |
+| short | 2 Bytes | 0 |
+| int | 4 Bytes | 0 |
+| long | 8 Bytes | 0L |
+| float | 4 Bytes | 0.0f |
+| double | 8 Bytes | 0.0d |
+| char | 2 Bytes | '\u0000' |
+| boolean | JVM Dependent | false |
+
+
+# Java Program
+
+```java
+public class DataTypesDemo {
+
+    public static void main(String[] args) {
+
+        byte age = 20;
+        short marks = 500;
+        int salary = 50000;
+        long population = 1400000000L;
+
+        float height = 5.8f;
+        double percentage = 89.75;
+
+        char grade = 'A';
+        boolean passed = true;
+
+        System.out.println(age);
+        System.out.println(marks);
+        System.out.println(salary);
+        System.out.println(population);
+        System.out.println(height);
+        System.out.println(percentage);
+        System.out.println(grade);
+        System.out.println(passed);
+
+    }
+
+}
+```
+
+# Common Beginner Mistakes
+
+* Forgetting `f` after float value.
+
+Wrong
+
+```java
+float value = 5.5;
+```
+
+Correct
+
+```java
+float value = 5.5f;
+```
+
+* Using double quotes with char.
+
+Wrong
+
+```java
+char grade = "A";
+```
+
+Correct
+
+```java
+char grade = 'A';
+```
+
+*  Using single quotes with String.
+
+Wrong
+
+```java
+String name = 'Sofiya';
+```
+
+Correct
+
+```java
+String name = "Sofiya";
+```
+
+# MCQs
+
+### Q1. Which data type stores decimal numbers?
+A. int
+B. char
+C. float
+D. boolean
+
+**Answer:** C
+
+### Q2. Which data type stores only true or false?
+A. int
+B. boolean
+C. char
+D. byte
+
+**Answer:** B
+
+### Q3. Which data type stores a single character?
+
+A. String
+B. char
+C. int
+D. float
+
+**Answer:** B
+
+
+### Q4. Which data type has the highest precision for decimal values?
+A. float
+B. double
+C. byte
+D. short
+
+**Answer:** B
+
+# Viva Questions
+1. What is a Primitive Data Type?
+2. What is the difference between float and double?
+3. Why do we use `f` with float?
+4. What is the default value of boolean?
+5. Can char store multiple characters?
+6. Why is double preferred over float?
+7. What is the difference between char and String?
+8. Name all 8 Primitive Data Types.
+
+# Interview Questions
+
+### Basic
+1. How many Primitive Data Types are there in Java?
+2. Which data type is used for decimal values?
+3. Which data type stores a single character?
+4. What is the default value of int?
+5. What is the default value of boolean?
+
+### Intermediate
+1. Explain all Primitive Data Types with examples.
+2. Compare float and double.
+3. Compare char and String.
+4. Why is Java called a Strongly Typed Language?
+5. How do Data Types help in memory management?
+
+# Quick Revision
+- byte → Small Integer
+- short → Medium Integer
+- int → Most Common Integer
+- long → Large Integer
+- float → Decimal (Less Precision)
+- double → Decimal (High Precision)
+- char → Single Character
+- boolean → true / false
+
+# Key Takeaways
+- Java has **8 Primitive Data Types**.
+- Choose the correct data type based on the value.
+- Use `L` with long values.
+- Use `f` with float values.
+- `char` uses single quotes.
+- `String` uses double quotes.
+- `double` provides more precision than `float`.
+Congratulations! 
+> You have successfully completed **Chapter 05 - Data Types**.
